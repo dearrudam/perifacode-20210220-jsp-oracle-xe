@@ -1,0 +1,28 @@
+<Context>
+
+	<!-- dê uma olhada aqui: 
+	
+	https://tomcat.apache.org/tomcat-8.0-doc/jndi-datasource-examples-howto.html#Oracle_8i,_9i_&_10g 
+	
+	só há a necessidade de adicionar o driver do Oracle nas
+	libs do Tomcat caso vc queira colocar essas configurações 
+	ao server.xml 
+	
+	-->
+	<Resource name="jdbc/MeuDB" 
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.OracleDriver"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		username="meudb"
+		password="meudb" 
+		maxTotal="20" 
+		maxIdle="10" 
+		maxActive="20"
+		maxWait="15000" 
+		validationQuery="select CURRENT_DATE from dual"
+		removeAbandoned="true" 
+		removeAbandonedTimeout="30" 
+		logAbandoned="true">
+	</Resource>
+</Context>
