@@ -1,4 +1,4 @@
-### CRUD - utilizando Tomcat + JDBC acessando Oracle Database XE
+### JSP + JDBC acessando Oracle Database XE
 
 Projeto utilizado no Plantão Java da comunidade [PerifaCode](https://perifacode.com/) - 20/02/2021 às 20:00
 
