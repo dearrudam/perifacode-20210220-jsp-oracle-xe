@@ -18,7 +18,7 @@ Info:
     
 
 - Configurado para se conectar em um servidor Oracle Database XE executando em localhost:1521;
-  - Configuração do data source eatá no arquivo `````src/webapp/META-INF/context.xml`````.
+  - Configuração do data source eatá no arquivo `````src/main/webapp/META-INF/context.xml`````.
   
 
 - Foi utilizando o docker-compose para essa tarefa.
